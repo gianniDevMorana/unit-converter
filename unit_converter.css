@@ -1,0 +1,62 @@
+body {
+  background-color: #F4F4F4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6943FF;
+  color: white;
+  padding-bottom: 4vh;
+}
+
+#input-value {
+  width: 70px;
+  height: 60px;
+  color: white;
+  background-color: #6943FF;
+  border: 1px solid #CCC1FF;
+  border-radius: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#convert-btn {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.conversion-fields {
+  text-align: center;
+}
+
+#length-field {
+  height: 100px;
+  background-color: white;
+  padding-top: 20px;
+  margin: 30px 15px;
+}
+
+#volume-field {
+  height: 100px;
+  background-color: white;
+  padding-top: 20px;
+  margin: 30px 15px;
+}
+
+#mass-field {
+  height: 100px;
+  background-color: white;
+  padding-top: 20px;
+  margin: 30px 15px;
+}
