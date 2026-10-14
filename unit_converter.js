@@ -1,7 +1,16 @@
 const convertBtn = document.getElementById("convert-btn");
 const inputValue = document.getElementById("input-value");
 
-convertBtn.addEventListener("click", function () {
+let inputFromLocalStorage = JSON.parse(localStorage.getItem("inputValue"));
+
+if (inputFromLocalStorage) {
+  inputValue.value = inputFromLocalStorage;
+  convertValue();
+}
+
+convertBtn.addEventListener("click", convertValue);
+
+function convertValue() {
   let feet = inputValue.value * 3.281;
   let meters = inputValue.value / 3.281;
   let gallons = inputValue.value * 0.264;
@@ -35,4 +44,7 @@ convertBtn.addEventListener("click", function () {
     `
             </p>`;
   massField.innerHTML += pMass;
-});
+
+  localStorage.setItem("inputValue", JSON.stringify(inputValue.value));
+  console.log(localStorage.getItem("inputValue"));
+}
