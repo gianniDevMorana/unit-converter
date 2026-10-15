@@ -27,7 +27,7 @@ function convertValue() {
             <p id="p-length">` +
     `${inputValue.value} meters = ${feet.toFixed(3)} feet | ${inputValue.value} feet = ${meters.toFixed(3)} meters` +
     `</p>`;
-  lengthField.innerHTML += pLength;
+  lengthField.innerHTML = pLength;
 
   const pVolume =
     `
@@ -35,7 +35,7 @@ function convertValue() {
     `${inputValue.value} liters = ${gallons.toFixed(3)} gallons | ${inputValue.value} gallons = ${liters.toFixed(3)} liters` +
     `
             </p>`;
-  volumeField.innerHTML += pVolume;
+  volumeField.innerHTML = pVolume;
 
   const pMass =
     `
@@ -43,8 +43,7 @@ function convertValue() {
     `${inputValue.value} kilos = ${pound.toFixed(3)} pounds | ${inputValue.value} pounds = ${kilos.toFixed(3)} kilos` +
     `
             </p>`;
-  massField.innerHTML += pMass;
+  massField.innerHTML = pMass;
 
   localStorage.setItem("inputValue", JSON.stringify(inputValue.value));
-  console.log(localStorage.getItem("inputValue"));
 }

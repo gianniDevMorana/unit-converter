@@ -1,5 +1,5 @@
 body {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #6943FF;
+  background-color: #6943ff;
   color: white;
   padding-bottom: 4vh;
 }
@@ -19,8 +19,8 @@ h1 {
   width: 70px;
   height: 60px;
   color: white;
-  background-color: #6943FF;
-  border: 1px solid #CCC1FF;
+  background-color: #6943ff;
+  border: 1px solid #ccc1ff;
   border-radius: 5px;
   font-size: 40px;
   font-weight: bold;
@@ -40,33 +40,11 @@ h1 {
   text-align: center;
 }
 
-#length-field {
+.unit-field {
   height: 100px;
-  color: #5A537B;
+  color: #5a537b;
   background-color: white;
-  padding-top: 30px;
-  margin: 30px 15px;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-}
-
-#volume-field {
-  height: 100px;
-  color: #5A537B;
-  background-color: white;
-  padding-top: 30px;
-  margin: 30px 15px;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-}
-
-#mass-field {
-  height: 100px;
-  color: #5A537B;
-  background-color: white;
-  padding-top: 30px;
+  padding: 5px 0 35px 0;
   margin: 30px 15px;
   font-family: sans-serif;
   font-weight: 600;
