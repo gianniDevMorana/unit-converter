@@ -51,17 +51,7 @@ h1 {
   font-size: 22px;
 }
 
-#p-length {
-  font-size: large;
-  font-weight: 400;
-}
-
-#p-volume {
-  font-size: large;
-  font-weight: 400;
-}
-
-#p-mass {
+.convertion-text {
   font-size: large;
   font-weight: 400;
 }

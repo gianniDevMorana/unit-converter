@@ -22,28 +22,11 @@ function convertValue() {
   const volumeField = document.getElementById("volume-field");
   const massField = document.getElementById("mass-field");
 
-  const pLength =
-    `
-            <p id="p-length">` +
-    `${inputValue.value} meters = ${feet.toFixed(3)} feet | ${inputValue.value} feet = ${meters.toFixed(3)} meters` +
-    `</p>`;
-  lengthField.innerHTML = pLength;
+  lengthField.textContent = `${inputValue.value} meters = ${feet.toFixed(3)} feet | ${inputValue.value} feet = ${meters.toFixed(3)} meters`;
 
-  const pVolume =
-    `
-            <p id="p-volume">` +
-    `${inputValue.value} liters = ${gallons.toFixed(3)} gallons | ${inputValue.value} gallons = ${liters.toFixed(3)} liters` +
-    `
-            </p>`;
-  volumeField.innerHTML = pVolume;
+  volumeField.textContent = `${inputValue.value} liters = ${gallons.toFixed(3)} gallons | ${inputValue.value} gallons = ${liters.toFixed(3)} liters`;
 
-  const pMass =
-    `
-            <p id="p-mass">` +
-    `${inputValue.value} kilos = ${pound.toFixed(3)} pounds | ${inputValue.value} pounds = ${kilos.toFixed(3)} kilos` +
-    `
-            </p>`;
-  massField.innerHTML = pMass;
+  massField.textContent = `${inputValue.value} kilos = ${pound.toFixed(3)} pounds | ${inputValue.value} pounds = ${kilos.toFixed(3)} kilos`;
 
   localStorage.setItem("inputValue", JSON.stringify(inputValue.value));
 }
